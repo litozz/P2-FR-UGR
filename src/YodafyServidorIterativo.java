@@ -18,6 +18,7 @@ public class YodafyServidorIterativo {
 		byte []buffer=new byte[256];
 		// Número de bytes leídos
 		int bytesLeidos=0;
+                System.out.println("modificando");
 		
 		try {
 			// Abrimos el socket en modo pasivo, escuchando el en puerto indicado por "port"

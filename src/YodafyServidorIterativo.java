@@ -31,7 +31,7 @@ public class YodafyServidorIterativo {
 				// Aceptamos una nueva conexión con accept()
 				/////////////////////////////////////////////////
 				socketServicio=serverSocket.accept();
-                                System.out.println("El servicio ha sido aceptado");
+                                System.out.println("El cliente ha sido aceptado");
 				//////////////////////////////////////////////////
 				
 				// Creamos un objeto de la clase ProcesadorYodafy, pasándole como 

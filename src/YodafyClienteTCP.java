@@ -33,6 +33,7 @@ public class YodafyClienteTCP {
 			// socketServicio= ... (Completar)
 			//////////////////////////////////////////////////////			
 			
+                        System.out.println("hola");
 			InputStream inputStream = socketServicio.getInputStream();
 			OutputStream outputStream = socketServicio.getOutputStream();
 			

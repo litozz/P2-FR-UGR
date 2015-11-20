@@ -30,10 +30,9 @@ public class YodafyClienteTCP {
 		try {
 			// Creamos un socket que se conecte a "hist" y "port":
 			//////////////////////////////////////////////////////
-			// socketServicio= ... (Completar)
+			socketServicio=new Socket(host,port);
 			//////////////////////////////////////////////////////			
 			
-                        System.out.println("hola");
 			InputStream inputStream = socketServicio.getInputStream();
 			OutputStream outputStream = socketServicio.getOutputStream();
 			
@@ -43,7 +42,7 @@ public class YodafyClienteTCP {
 			
 			// Enviamos el array por el outputStream;
 			//////////////////////////////////////////////////////
-			// ... .write ... (Completar)
+			outputStream.write(buferEnvio,0,buferEnvio.length());
 			//////////////////////////////////////////////////////
 			
 			// Aunque le indiquemos a TCP que queremos enviar varios arrays de bytes, sólo

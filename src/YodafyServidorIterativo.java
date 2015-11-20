@@ -18,20 +18,20 @@ public class YodafyServidorIterativo {
 		byte []buffer=new byte[256];
 		// Número de bytes leídos
 		int bytesLeidos=0;
-                System.out.println("modificando");
 		
 		try {
 			// Abrimos el socket en modo pasivo, escuchando el en puerto indicado por "port"
 			//////////////////////////////////////////////////
-			// ...serverSocket=... (completar)
+			ServerSocket serverSocket=new ServerSocket(port);
 			//////////////////////////////////////////////////
 			
 			// Mientras ... siempre!
 			do {
-				
+				Socket socketServicio;
 				// Aceptamos una nueva conexión con accept()
 				/////////////////////////////////////////////////
-				//socketServicio=... (completar)
+				socketServicio=serverSocket.accept();
+                                System.out.println("El servicio ha sido aceptado");
 				//////////////////////////////////////////////////
 				
 				// Creamos un objeto de la clase ProcesadorYodafy, pasándole como 
